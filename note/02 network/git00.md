@@ -80,35 +80,37 @@ ssh-keygen -t rsa -C 'james@gupaoedu.com
 
 ## 4. git 常用命令
 
-a)    git status  没事status一下
+1. git status  
 
-b)    git remote
+- 没事 status一下，查看需要做的操作
 
-​      i.     git clone [git@xxx.com](mailto:git@xxx.com)
+2. git remote
 
-​     ii.     把本地项目推送到远端
+- git clone [git@xxx.com](mailto:git@xxx.com)
 
-\1. git init
+- 把本地项目推送到远端
+  - git init
+  - git remote add origin git@git.oschina.net:gupaoedu_com_vip/test10.git
+  - git push -u origin master
 
-\2. git remote add origin [git@git.oschina.net:gupaoedu_com_vip/test10.git](mailto:git@git.oschina.net:gupaoedu_com_vip/test10.git)
+3. 将当前目录下所有添加的步骤添加到 Stagging Area 
 
-\3. git push -u origin master
+   **命令：<font color=red>git add .</font>**
 
-   iii.     git pull 
+4. git pull 
 
-​    iv.     git push
+5. git push
 
-​     v.     git checkout 
+6. git checkout 
 
-\1. 切新分支
+- 切新分支
+- 撤消更改
 
-\2. 撤消更改
+6. git merge
 
-​    vi.     git merge
+7. git rebase 
 
-  vii.     git rebase 
-
- viii.     git tag 版本
+8. git tag 版本
 
 
 
