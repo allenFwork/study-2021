@@ -72,9 +72,6 @@
 
    <img src="images\images-git\04.png" alt="04" style="zoom:50%;" />
 
-2. 
-
-ssh-keygen -t rsa -C 'james@gupaoedu.com
 
 
 
@@ -86,7 +83,7 @@ ssh-keygen -t rsa -C 'james@gupaoedu.com
 
 2. git remote
 
-- git clone [git@xxx.com](mailto:git@xxx.com)
+- git clone git@xxx.com
 
 - 把本地项目推送到远端
   - git init
@@ -95,7 +92,9 @@ ssh-keygen -t rsa -C 'james@gupaoedu.com
 
 3. 将当前目录下所有添加的步骤添加到 Stagging Area 
 
-   **命令：<font color=red>git add .</font>**
+   - **命令：<font color=red>git add .</font>**
+
+   - git add 和 
 
 4. git pull 
 
@@ -117,3 +116,5 @@ ssh-keygen -t rsa -C 'james@gupaoedu.com
 ## 知识点
 
 1. 翻墙工具：vpnso (2017年 100元1年，支持家庭和公司使用)
+
+2. ![](images\images-git\05.png)
