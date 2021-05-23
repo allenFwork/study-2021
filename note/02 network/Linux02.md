@@ -161,6 +161,40 @@
 
 - 但是这样修改后，下次重启服务器后，防火墙还会开启
 
+### 5.3 安装tomcat过程中出现的问题
+
+#### 5.3.1 权限不足
+
+进入bin目录后执行 startup.sh 时出现没有权限问题
+
+![](images\虚拟机\Centos7安装tomcat7没有执行权限.png)
+
+解决办法：添加权限 chmod +x *.sh
+
+![](images\虚拟机\Centos7安装tomcat7添加执行权限.png)
+
+#### 5.3.2 缺少logs目录
+
+![](images\虚拟机\启动tomcat出现的问题1.png)
+
+解决办法：创建缺少的目录
+
+![](images\虚拟机\解决启动tomcat的问题1.png)
+
+#### 5.3.3 下载版本不正确
+
+问题：下载的版本是 apache-tomcat-8.5.31-src.zip 找不到 org.apache.catalina.startup.Bootstrap
+
+![](images\虚拟机\tomcat安装版本错误.png)
+
+解决办法： 应该从**“Binary Distributions“**的下载core包，重新下载安装
+
+**使用 apache-tomcat-8.5.31.tar.gz 作为安装包**
+
+### 5.4 查看tomcat是否启动
+
+![](images\虚拟机\查看tomca是否启动.png)
+
 ## 6. Shell编程
 
 ### 6.1 基本格式 

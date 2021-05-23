@@ -10,17 +10,17 @@
 
 ## 1.1 配置虚拟机的网关设置
 
-![](\images\虚拟机网络配置-NET模式1.png)
+![](images\虚拟机网络配置-NET模式1.png)
 
-![](\images\虚拟机网络配置-NET模式2.png)
+![](images\虚拟机网络配置-NET模式2.png)
 
-![](\images\虚拟机网络配置-NET模式.png)
+![](images\虚拟机网络配置-NET模式.png)
 
 - 虚拟机点击 编辑  -->  虚拟网络编辑器  -->  选择对应的模式  -->  Net设置  --> 编辑网关地址
 
 ## 1.2  修改网络配置文件 
 
-![](\images\Centos服务器设置ip和网关地址.png)
+![](images\Centos服务器设置ip和网关地址.png)
 
 - 设置 对应服务器中的配置信息
 - 配置文件地址  `` /etc/sysconfig/network-scripts/ifcfg-ens33 ``
@@ -35,18 +35,18 @@
 
 ## 2.1 配置windows到虚拟机网关的链接
 
-![](\images\windows配置连接网关1.png)
+![](images\windows配置连接网关1.png)
 
-![](\images\windows配置连接网关2.png)
+![](images\windows配置连接网关2.png)
 
 - **VMware Network Adapter VMnet1 和 VMware Network Adapter VMnet8 就是虚拟机设置的虚拟网卡**
 - 因为虚拟机中使用使用 VMnet8 进行配置网关，所以windows中也选择它配置网关
 
-![](\images\windows配置连接网关3.png)
+![](images\windows配置连接网关3.png)
 
 ## 2.2 检查连接状况
 
-![](\images\windows核查.png)
+![](images\windows核查.png)
 
 # 3.配置Linux连接的网关
 
@@ -78,9 +78,23 @@
 
 - Linux 连接外网测试
 
-# 4. 知识点
+# 4 虚拟机ping通外网，本机无法ping通虚拟机
 
-## 4.1 虚拟机
+## 4.1 原因
+
+1. **<font color=red>没有注意子网掩码的范围，所配置的虚拟机ip不在该范围内</font>**
+
+- 虚拟机所配置的网关为 192.168.33.1，子ip是192.168.33.0
+- 配置的子网掩码为 255.255.255.0
+- 所以自己配制的虚拟机系统的ip范围是 <font color=red>192.168.33</font>.2 至 <font color=red>192.168.33</font>.255 ，不能是 192.168.40.1这样的
+
+2. 配置完成后，检查虚拟机系统的ip是否与主机ip存在冲突
+
+
+
+# 5. 知识点
+
+## 5.1 虚拟机
 
 1. NAT 网络模式：虚拟机给Linux系统虚拟出一个网卡，进行网络连接
 
@@ -88,9 +102,9 @@
 
    `NVMe` 固态硬盘作为磁盘
 
-## 4.2 Linux
+## 5.2 Linux
 
-### 4.2.1 通过 `XShell` 连接 Linux 服务器
+### 5.2.1 通过 `XShell` 连接 Linux 服务器
 
 1. 连接服务器
 
@@ -104,7 +118,7 @@
 
 - SSH协议连接到 `192.168.33.3:22` 成功
 
-### 4.2.2 常用命令
+### 5.2.2 常用命令
 
 1. 进入根目录：`cd /`
 
@@ -154,7 +168,7 @@
 13. 复制文件：`cp 源文件 目标文件`
 14. 删除文件：`rm -f 文件`
 
-### 4.2.3 用户权限
+### 5.2.3 用户权限
 
 1. 添加用户：
    - `useradd 用户名`
@@ -187,7 +201,7 @@
 
    ![](images\权限5.png)
 
-### 4.2.4 环境变量
+### 5.2.4 环境变量
 
 1. **<font color=red>/etc/profile , Linux中环境变量配置在 profile 文件中</font>**
 
@@ -197,7 +211,7 @@
 
 - 在 profile 文件中，通过 export 添加变量，中间冒号隔开
 
-### 4.2.5 切换用户
+### 5.2.5 切换用户
 
 1. 在使用 allen 账户时，权限不够，切换到 root 账户
 
@@ -222,7 +236,7 @@
 - 通过root账号，修改 /etc/sudoers 配置文件，给 allen 添加 `sudo` 命令权限
 - 使用 `sudo` 命令，只需要输入自己的账号密码
 
-### 4.2.6 查看Linux内核版本
+### 5.2.6 查看Linux内核版本
 
 - 指令： 
 
@@ -231,3 +245,9 @@
   ```
 
 - ![](images\linux内核查询.png)
+
+### 5.2.7 vim 模式下查询关键字步骤
+
+1. ESC
+2. 输入 /关键字  ，然后回车
+3. 按 N ，查找下一个
