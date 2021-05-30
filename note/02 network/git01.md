@@ -83,8 +83,8 @@
 
 2. git remote
 
+- 从远端下载项目：
 - git clone git@xxx.com
-
 - 把本地项目推送到远端
   - git init
   - git remote add origin git@git.oschina.net:gupaoedu_com_vip/test10.git
@@ -95,21 +95,33 @@
    - **命令：<font color=red>git add .</font>**
 
    - git add 和 
-
-4. git pull 
-
-5. git push
-
-6. git checkout 
+4. git fetch ：把远端的分支信息拉去到本地，本地没有更新
+5. git pull   ：把远端的分支拉取到本地
+6. git push ：把本地的推送到远端上
+7. git checkout 
 
 - 切新分支
 - 撤消更改
+  - git checkout .           ：把当前目录下所有文件都恢复
+  - git checkout 文件名：把当前目录下所有文件都恢复
 
-6. git merge
+6. git stash
+7. git merge
+   - 在远端上进行合并，使用 pull request，将自己修改的分支拉去到master分支上
+8. git rebase 
+9. git tag 版本
 
-7. git rebase 
+## 5. git-flow
 
-8. git tag 版本
+- 团队管理
+
+## 6. gitlabs
+
+• https://bitnami.com/stack/gitlab/virtual-machine
+
+• https://github.com/gitlabhq/gitlabhq 
+
+• [https://about.gitlab.com/downloads/#centos7](https://about.gitlab.com/downloads/) 
 
 
 
