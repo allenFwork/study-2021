@@ -21,8 +21,6 @@ git hash-object -w text.txt
 
 
 
-
-
 ## 二. Git核心命令使用
 
 ### 1. 创建本地仓库
