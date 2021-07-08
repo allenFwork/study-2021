@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="10292100-2f8b-4a16-9cf8-3a7a8fcf7637" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:/work/maven/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ucGOHOThuwg2FcSXRkZSV8WZaV" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/study-page-plugin/src/main/java/com/study/util" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\documents\study\project\study-mybatis-plugins\study-page-plugin\src\main\java\com\study\util" />
+      <recent name="C:\documents\study\project\study-mybatis-plugins\study-page-plugin\src\main\resources" />
+      <recent name="C:\documents\study\project\study-mybatis-plugins\study-page-plugin\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.study.mapper" />
+      <recent name="com.study.entity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\documents\study\project\study-mybatis-plugins\study-page-plugin\src\main\java\com\study\config" />
+      <recent name="C:\documents\study\project\study-mybatis-plugins\study-page-plugin\src\main\resources\static" />
+      <recent name="C:\documents\study\project\study-mybatis-plugins\study-page-plugin\src\main\resources\mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Slf4j">
+    <configuration name="Jcl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.log.Jcl" />
+      <module name="study-log-plugin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.log.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Jul" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.log.Jul" />
+      <module name="study-log-plugin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.log.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Log4j" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.log.Log4j" />
+      <module name="study-log-plugin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.log.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Slf4j" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.log.Slf4j" />
+      <module name="study-log-plugin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.log.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudyPagePluginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="study-page-plugin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.StudyPagePluginApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Slf4j" />
+        <item itemvalue="Application.Jcl" />
+        <item itemvalue="Application.Log4j" />
+        <item itemvalue="Spring Boot.StudyPagePluginApplication" />
+        <item itemvalue="Application.Jul" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10292100-2f8b-4a16-9cf8-3a7a8fcf7637" name="Default Changelist" comment="" />
+      <created>1624957429587</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624957429587</updated>
+      <workItem from="1624957436676" duration="4621000" />
+      <workItem from="1625015993042" duration="9000000" />
+      <workItem from="1625032227781" duration="10473000" />
+      <workItem from="1625188228478" duration="4508000" />
+      <workItem from="1625447044058" duration="1150000" />
+      <workItem from="1625533484673" duration="640000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/study-page-plugin/src/main/java/com/study/plugin/MyPagePlugin.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/study-page-plugin/src/main/java/com/study/service/UserServiceImpl.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/study-log-plugin/src/main/java/com/study/log/Log4j.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/work/cool/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/org/apache/commons/logging/impl/LogFactoryImpl.class</url>
+          <line>180</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

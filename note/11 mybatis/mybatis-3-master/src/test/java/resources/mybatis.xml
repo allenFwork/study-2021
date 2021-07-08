@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+  <typeAliases>
+    <typeAlias type="com.study.entity.User" alias="user"/>
+  </typeAliases>
+
+  <!-- 自定义对象的实例化行为 -->
+  <!--<objectFactory type="com.study.entity.User">
+    <property name="id" value="2"/>
+    <property name="name" value="superGirl"/>
+  </objectFactory>-->
+
+  <!-- 和spring整合后,environment配置将废除 -->
+  <environments default="development">
+    <environment id="development">
+      <!-- 使用 jdbc 事务管理  -->
+      <transactionManager type="JDBC"></transactionManager>
+      <!-- 数据库连接池 -->
+      <dataSource type="POOLED">
+        <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+      </dataSource>
+    </environment>
+  </environments>
+
+  <!-- 加载 Mapper.xml 文件-->
+  <mappers>
+    <!-- package 指定包名 -->
+    <!--<package name="com.study.mapper"/>-->
+    <!-- mapper标签有三个属性：
+          resource：到项目的输出文件中找
+          url：     到项目外某地址找
+          class：   具体某一个类
+    -->
+    <!--<mapper resource="resources/mapper/UserMapper.xml" url="" class="" ></mapper>-->
+    <mapper resource="resources/mapper/UserMapper.xml"></mapper>
+  </mappers>
+
+  <!--<plugins>
+    <plugin interceptor=""></plugin>
+  </plugins>-->
+
+</configuration>

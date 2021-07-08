@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.mapper.UserMapper">
+
+  <!-- 第一步执行一条count语句 -->
+  <!-- 第二步 重写sql select * from 表名字 limit start , pageSize -->
+
+  <!-- 在mybatis执行sql之前，做处理重写sql -->
+  <!-- 定义执行分页的id命名规则 -->
+  <select id="selectAllByPage" resultType="com.study.entity.User">
+    select * from user
+  </select>
+
+  <select id="selectAll" resultType="com.study.entity.User">
+    select * from user
+  </select>
+
+</mapper>
